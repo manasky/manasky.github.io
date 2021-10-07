@@ -11,19 +11,20 @@ import Footer from '../components/Footer.svelte'
 ---
 <html lang="en" data-theme={dafaultTheme || 'dark'}>
   <Head
-    title={title || ''}
-    desc={desc || ''}
+    title={title || 'mana sky - web development team'}
+    desc={desc || 'Web development, Mobile app development, UI/UX design'}
     twitterUsername={twitterUsername || ''}
   >
+    <link rel="stylesheet" href={Astro.resolve("../fonts.css")} />
     <link rel="stylesheet" href={Astro.resolve("../global.css")} />
     <link rel="icon" type="image/svg+xml" href={Astro.site +"favicon.svg"}>
     <link rel="alternate icon" href={Astro.site +"favicon.ico"}>
   </Head>
   <body>
-    <div class="flex justify-center bg-base-300">
+    <div class="flex justify-center">
       <div class="w-full max-w-6xl">
         <Navbar title={title}>
-          <ThemeChange client:load/>
+          <ThemeChange client:only/>
         </Navbar>
       </div>
     </div>

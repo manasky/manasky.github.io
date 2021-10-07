@@ -1,38 +1,127 @@
 ---
 import Layout from '../layouts/Default.astro'
 import Hero from '../components/Hero.svelte'
+import TechStackItem from '../components/TechStackItem.svelte'
+import SocialIconItem from '../components/SocialIconItem.svelte'
 ---
 
-<Layout
-  title="Hello"
-  desc=""
->
-  <div class="bg-base-200">
-    <Hero
-      title="Big title text here"
-      desc="smaller description text here"
+<Layout>
+  <div>
+    <Hero client:load
+      title='
+      <span class="font-black tracking-tight text-transparent text-stroke">your partner</span>
+      <br/>
+      <span class="font-light">—</span>
+      <span class="font-black text-transparent text-stroke">in</span>
+      <span class="font-black">design</span>
+      <span class="font-black text-transparent text-stroke"> & </span>
+      <br/>
+      <span class="font-black">development</span>'
+      desc='<span class="flex flex-col gap-1 sm:flex-row">
+        <span>
+          We create <span class="font-bold">apps</span> and <span class="font-bold">websites</span>
+        </span>
+        <span>
+          your clients will 
+          <svg class="inline-block w-6 h-6 fill-current text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>love</title><path d="M256,448a32,32,0,0,1-18-5.57c-78.59-53.35-112.62-89.93-131.39-112.8-40-48.75-59.15-98.8-58.61-153C48.63,114.52,98.46,64,159.08,64c44.08,0,74.61,24.83,92.39,45.51a6,6,0,0,0,9.06,0C278.31,88.81,308.84,64,352.92,64,413.54,64,463.37,114.52,464,176.64c.54,54.21-18.63,104.26-58.61,153-18.77,22.87-52.8,59.45-131.39,112.8A32,32,0,0,1,256,448Z"/></svg>
+        </span>
+      </span>'
     >
-      <a class="btn btn-primary" href="/about">Go to about page</a>
+      <a class="tracking-wide btn btn-primary btn-lg btn-wide" href="/about">Let's Begin Now!</a>
     </Hero>
   </div>
   <div class="flex justify-center">
     <div class="w-full max-w-6xl">
       <div class="px-6 py-20">
-        <p class="my-6">
-          Ducimus quaerat itaque quia doloribus nam eaque explicabo. Magnam ea enim. Est fuga qui totam dolores asperiores corrupti. Aut illum optio sequi fuga recusandae sunt. Repellat voluptas delectus iure magnam velit est repellat. Rem officiis nihil veritatis harum et consequuntur at ex.
-          Natus ratione commodi. Qui cupiditate sint. Ea eveniet illum iure quo. Sed et libero quia esse sapiente aperiam doloremque. Tenetur in quidem.
-          Repudiandae commodi omnis. Est inventore dolores omnis quia tempore tempore. Repellendus quo est consequatur et magnam enim doloremque occaecati. Rerum nobis amet aperiam explicabo modi voluptatem. Odit iure nemo esse quidem ullam hic ipsa. Mollitia distinctio quis omnis quos esse praesentium.
-        </p>
-        <p class="my-6">
-          Ducimus quaerat itaque quia doloribus nam eaque explicabo. Magnam ea enim. Est fuga qui totam dolores asperiores corrupti. Aut illum optio sequi fuga recusandae sunt. Repellat voluptas delectus iure magnam velit est repellat. Rem officiis nihil veritatis harum et consequuntur at ex.
-          Natus ratione commodi. Qui cupiditate sint. Ea eveniet illum iure quo. Sed et libero quia esse sapiente aperiam doloremque. Tenetur in quidem.
-          Repudiandae commodi omnis. Est inventore dolores omnis quia tempore tempore. Repellendus quo est consequatur et magnam enim doloremque occaecati. Rerum nobis amet aperiam explicabo modi voluptatem. Odit iure nemo esse quidem ullam hic ipsa. Mollitia distinctio quis omnis quos esse praesentium.
-        </p>
-        <p class="my-6">
-          Ducimus quaerat itaque quia doloribus nam eaque explicabo. Magnam ea enim. Est fuga qui totam dolores asperiores corrupti. Aut illum optio sequi fuga recusandae sunt. Repellat voluptas delectus iure magnam velit est repellat. Rem officiis nihil veritatis harum et consequuntur at ex.
-          Natus ratione commodi. Qui cupiditate sint. Ea eveniet illum iure quo. Sed et libero quia esse sapiente aperiam doloremque. Tenetur in quidem.
-          Repudiandae commodi omnis. Est inventore dolores omnis quia tempore tempore. Repellendus quo est consequatur et magnam enim doloremque occaecati. Rerum nobis amet aperiam explicabo modi voluptatem. Odit iure nemo esse quidem ullam hic ipsa. Mollitia distinctio quis omnis quos esse praesentium.
-        </p>
+        <h2 class="text-5xl mb-20 md:text-[10vw] xl:text-9xl font-title font-black text-transparent text-stroke">
+          Team
+        </h2>
+        <div class="grid grid-rows-2 gap-20">
+
+          <div class="grid grid-cols-12 auto-rows-max ">
+            <div class="col-span-11 grid place-items-start col-start-1 row-span-4 row-start-1 p-[3vw] xl:p-10 border-opacity-10 md:border md:col-start-1 md:col-span-5 md:row-start-1 md:row-span-5 border-neutral rounded-box">
+              <img class="w-2/3 md:w-full rounded-box" src="https://unavatar.io/twitter/saadeghi" alt=""/>
+            </div>
+            <div class="relative z-10 col-span-11 col-start-2 row-span-6 row-start-4 p-10 overflow-hidden md:col-span-8 md:row-span-6 md:row-start-2 md:col-start-5 bg-neutral text-neutral-content rounded-box">
+              <h3 class="mb-4 text-3xl font-semibold tracking-wider font-title">Pouya</h3>
+              <p class="mb-4 leading-7">
+                — UI/UX designer, Front-end developer
+                <br/>
+                — Creator of <a class="link link-hover link-secondary" href="https://daisyui.com">daisyUI</a>, 
+                co-creator of <a class="link link-hover link-secondary" href="https://atbox.io">Atbox</a>
+                <br/>
+              </p>
+              
+              <h4 class="mt-8 mb-4 font-bold">Links</h4>
+              <div class="flex flex-wrap gap-4">
+                <SocialIconItem title="Mail" slug="mail" url="/"/>
+                <SocialIconItem title="Twitter" slug="twitter" url="https://twitter.com/saadeghi"/>
+                <SocialIconItem title="GitHub" slug="github" url="https://github.com/saadeghi"/>
+              </div>
+
+              <h4 class="mt-8 mb-4 font-bold">Favorite tools</h4>
+              <div class="flex flex-wrap gap-4">
+                <TechStackItem title="Sketch" slug="sketch" />
+                <TechStackItem title="HTML" slug="html" />
+                <TechStackItem title="CSS" slug="css" />
+                <TechStackItem title="Tailwind CSS" slug="tailwindcss" />
+                <TechStackItem title="JavaScript" slug="javascript" />
+                <TechStackItem title="Svelte" slug="svelte" />
+                <TechStackItem title="Alpine.js" slug="alpinejs" />
+                <TechStackItem title="Wordpress" slug="wordpress" />
+              </div>
+
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12 auto-rows-max ">
+            <div class="col-span-11 grid place-items-end col-start-2 row-span-4 row-start-1 p-[3vw] xl:p-10 border-opacity-10 md:border md:col-start-8 md:col-span-5 md:row-start-1 md:row-span-5 border-neutral rounded-box">
+              <img class="w-2/3 md:w-full rounded-box" src="https://unavatar.io/twitter/sajjadrad" alt=""/>
+            </div>
+            <div class="relative z-10 col-span-11 col-start-1 row-span-6 row-start-4 p-10 overflow-hidden md:col-span-8 md:row-span-6 md:row-start-2 md:col-start-1 bg-neutral text-neutral-content rounded-box">
+              <h3 class="mb-4 text-3xl font-semibold tracking-wider font-title">Sajjad</h3>
+              
+              <p class="mb-4 leading-7">
+                — Back-end developer, Database and API architect
+                <br/>
+                — Creator of <a class="link link-hover link-secondary" href="https://atbox.io">Atbox</a>
+              </p>
+              <h4 class="mt-8 mb-4 font-bold">Links</h4>
+              <div class="flex flex-wrap gap-4">
+                <SocialIconItem title="Mail" slug="mail" url="/"/>
+                <SocialIconItem title="Twitter" slug="twitter" url="https://twitter.com/the_redrad"/>
+                <SocialIconItem title="GitHub" slug="github" url="https://github.com/theredrad"/>
+                <SocialIconItem title="Medium" slug="medium" url="https://theredrad.medium.com"/>
+                <SocialIconItem title="DEV.to" slug="devto" url="https://dev.to/theredrad"/>
+              </div>
+
+              <h4 class="mt-8 mb-4 font-bold">Favorite tools</h4>
+              <div class="flex flex-wrap gap-4">
+                <TechStackItem title="Golang" slug="golang" />
+                <TechStackItem title="PHP" slug="php" />
+                <TechStackItem title="Laravel" slug="laravel" />
+                <TechStackItem title="Node.js" slug="nodejs" />
+                <TechStackItem title="React Native" slug="reactnative" />
+                <TechStackItem title="MongoDB" slug="mongodb" />
+                <TechStackItem title="PostgreSQL" slug="postgresql" />
+                <TechStackItem title="MySQL" slug="mysql" />
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
   </div>

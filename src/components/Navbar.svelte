@@ -1,6 +1,6 @@
-<div class="navbar">
-  <div class="flex-1 px-2 mx-2">
-    <span class="text-lg font-bold">{title}</span>
+<div class="relative z-10 navbar">
+  <div class="flex-1">
+    <a href="/" class="text-2xl tracking-widest font-title btn btn-ghost btn-sm">{title}</a>
   </div> 
   <div class="flex-none">
     <slot/>
@@ -8,5 +8,5 @@
 </div>
 
 <script>
-export let title = ''
+export let title = 'mana sky'
 </script>
