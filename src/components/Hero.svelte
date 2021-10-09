@@ -1,4 +1,4 @@
-<div class="min-h-screen hero">
+<div class="h-screen max-h-[60rem] hero">
   <div class="items-stretch w-full max-w-6xl hero-content">
     <div class="w-full">
       <div>
