@@ -11,7 +11,7 @@ import Footer from '../components/Footer.svelte'
 ---
 <html lang="en" data-theme={dafaultTheme}>
   <Head
-    title={title || 'mana sky - web development team'}
+    title={(title || 'mana sky') + "  - Web Development Team"}
     desc={desc || 'Web development, Mobile app development, UI/UX design'}
     twitterUsername={twitterUsername || ''}
   >
@@ -24,7 +24,7 @@ import Footer from '../components/Footer.svelte'
   <body>
     <div class="flex justify-center">
       <div class="w-full max-w-6xl">
-        <Navbar title={title}>
+        <Navbar>
           <ThemeChange client:load/>
         </Navbar>
       </div>

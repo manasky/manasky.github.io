@@ -4,6 +4,7 @@ import Hero from '../components/Hero.svelte'
 import TechStackItem from '../components/TechStackItem.svelte'
 import SocialIconItem from '../components/SocialIconItem.svelte'
 import Perspective from '../components/Perspective.svelte'
+import Calendly from '../components/Calendly.svelte'
 
 ---
 
@@ -29,13 +30,30 @@ import Perspective from '../components/Perspective.svelte'
         </span>
       </span>'
     >
-      <a class="tracking-wide btn btn-primary btn-lg btn-wide" href="/about">Let's Get Started!</a>
+      <a class="tracking-wide btn btn-primary btn-lg btn-wide" href="#contact">Let's Get Started!</a>
     </Hero>
   </div>
-  <div class="flex justify-center">
+
+
+  <div class="flex flex-col items-center">
     <div class="w-full max-w-6xl">
       <div class="px-6 py-20">
-        <h2 class="text-7xl md:text-[10vw] xl:text-[10rem] font-title font-black text-transparent text-stroke">
+        <h2 class="text-7xl md:text-[10vw] xl:text-[10rem] font-title font-black text-transparent text-stroke leading-[0.7em]">
+          What we're offering
+        </h2>
+        <p class="mb-10 opacity-50">
+          We are a small team of designers and developers <br/>who create awesome stuff for the web and mobile.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="flex flex-col items-center">
+    <div class="w-full max-w-6xl">
+      <div class="px-6 py-20">
+        <h2 class="text-7xl md:text-[10vw] xl:text-[10rem] font-title font-black text-transparent text-stroke leading-[0.7em]">
           Team
         </h2>
         <p class="mb-10 opacity-50">
@@ -59,7 +77,7 @@ import Perspective from '../components/Perspective.svelte'
               </p>
               
               <h4 class="mt-8 mb-4 font-bold">Links</h4>
-              <div class="flex flex-wrap gap-4">
+              <div class="flex flex-wrap gap-2">
                 <SocialIconItem title="Twitter" slug="twitter" rel="nofollow" url="https://twitter.com/saadeghi"/>
                 <SocialIconItem title="GitHub" slug="github" rel="nofollow" url="https://github.com/saadeghi"/>
                 <SocialIconItem title="Atbox resume" slug="atbox" rel="nofollow" url="https://atbox.io/pouya"/>
@@ -93,7 +111,7 @@ import Perspective from '../components/Perspective.svelte'
                 — Creator of <a class="link link-hover link-secondary" href="https://atbox.io">Atbox</a>
               </p>
               <h4 class="mt-8 mb-4 font-bold">Links</h4>
-              <div class="flex flex-wrap gap-4">
+              <div class="flex flex-wrap gap-2">
                 <SocialIconItem title="Twitter" slug="twitter" url="https://twitter.com/the_redrad"/>
                 <SocialIconItem title="GitHub" slug="github" url="https://github.com/theredrad"/>
                 <SocialIconItem title="Medium" slug="medium" url="https://theredrad.medium.com"/>
@@ -120,7 +138,7 @@ import Perspective from '../components/Perspective.svelte'
 
 
 
-        <h2 class="text-7xl md:text-[10vw] xl:text-[10rem] font-title font-black text-transparent text-stroke">
+        <h2 class="text-7xl md:text-[10vw] xl:text-[10rem] font-title font-black text-transparent text-stroke leading-[0.7em]">
           Portfolio
         </h2>
         <p class="mb-10 opacity-50">
@@ -225,13 +243,31 @@ import Perspective from '../components/Perspective.svelte'
 
         </div>
 
-
-
-
-
-
-
       </div>
     </div>
+
+
+    <div class="w-full py-20 flex flex-col justify-center min-h-[70vh] bg-base-200">
+      <div class="flex flex-col items-center mb-10 text-center" id="contact">
+        <h2 class="uppercase mb-6 leading-[0.7em] text-7xl md:text-[10vw] xl:text-[8rem] font-title font-black text-transparent text-stroke">Let's get started!</h2>
+        <p class="mb-6 text-lg opacity-50">
+          Tell us more about your project. Send us a message <br/>and we'll get back to you as soon as possible.
+        </p>
+      </div>
+      <div class="flex flex-col items-center justify-center w-full gap-2 h-14 sm:flex-row">
+        <a class="gap-3 btn xl:btn-lg btn-outline" href="mailto:hi@manasky.com">
+          <img class="w-6 h-6" src="/icons/gmail.svg" alt="email"/>
+          Send us an Email
+        </a>
+        <div class="divider sm:divider-vertical opacity-40">OR</div>
+        <Calendly client:load>
+          <button class="gap-3 btn xl:btn-lg btn-outline">
+            <img class="w-6 h-6" src="/icons/zoom.svg" alt="zoom"/>
+            Schedule Zoom meeting
+          </button>
+        </Calendly>
+      </div>
+    </div>
+
   </div>
 </Layout>
