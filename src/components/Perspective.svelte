@@ -23,7 +23,7 @@
       let YRel = e.pageY - child.offsetTop
     
       let YAngle = -(0.5 - (XRel / width)) * scale
-      let XAngle = (0.5 - (YRel / width)) * scale
+      let XAngle = (0.25 - (YRel / width)) * scale * 2
     
       rotateY = YAngle + 'deg'
       rotateX = XAngle + 'deg'

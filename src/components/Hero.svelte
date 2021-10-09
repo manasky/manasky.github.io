@@ -2,7 +2,7 @@
   <div class="items-stretch w-full max-w-6xl hero-content">
     <div class="w-full">
       <div>
-        <Perspective scale=20 client:media="(min-width: 992px)">
+        <Perspective scale=20 client:load>
           <h1 class="mb-5 inline-block relative z-10 uppercase font-title 
           text-[14vw] leading-[.75em]
           sm:text-[10vw] sm:leading-[.75em]

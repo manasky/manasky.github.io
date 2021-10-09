@@ -38,7 +38,7 @@ module.exports = {
           "success": "#32a57b",
           "warning": "#f9cb33",
           "error": "#c55757",
-          "--rounded-box": ".3rem",
+          "--rounded-box": "1rem",
           "--rounded-btn": ".3rem",
           "--rounded-badge": ".1rem",
           "--tab-radius": ".3rem",

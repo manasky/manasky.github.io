@@ -9,7 +9,7 @@ import ThemeChange from '../components/ThemeChange.svelte'
 import Navbar from '../components/Navbar.svelte'
 import Footer from '../components/Footer.svelte'
 ---
-<html lang="en" data-theme={dafaultTheme || 'dark'}>
+<html lang="en" data-theme={dafaultTheme}>
   <Head
     title={title || 'mana sky - web development team'}
     desc={desc || 'Web development, Mobile app development, UI/UX design'}
@@ -20,14 +20,12 @@ import Footer from '../components/Footer.svelte'
     <link rel="icon" type="image/svg+xml" href={Astro.site +"/favicon.svg"}>
     <!-- <link rel="alternate icon" href={Astro.site +"/favicon.ico"}> -->
 
-    <meta name="robots" content="noindex"> <!--     REMOVE THIS    -->
-
   </Head>
   <body>
     <div class="flex justify-center">
       <div class="w-full max-w-6xl">
         <Navbar title={title}>
-          <ThemeChange client:only/>
+          <ThemeChange client:load/>
         </Navbar>
       </div>
     </div>
