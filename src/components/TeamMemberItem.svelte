@@ -6,7 +6,7 @@
   }
   "
   >
-    <img class="w-2/3 md:w-full rounded-box" src={img} alt=""/>
+    <img width="400" height="400" class="w-2/3 md:w-full rounded-box" src={img} alt=""/>
   </div>
   <div class="relative z-10 col-span-11 row-span-6 row-start-4 p-10 overflow-hidden shadow-2xl md:col-span-8 md:row-span-6 md:row-start-2 bg-neutral text-neutral-content rounded-box
   {reverse 
@@ -14,7 +14,7 @@
     : 'col-start-2 md:col-start-5'
   }
   ">
-    <h3 class="mb-4 text-3xl font-semibold tracking-wider font-title">{title}</h3>
+    <h3 class="mb-4 text-3xl tracking-wider uppercase lg:text-4xl font-wide">{title}</h3>
     <p class="mb-4 leading-7">
       <slot/><br/>
     </p>

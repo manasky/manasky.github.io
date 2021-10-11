@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'title': ['"Author"',"sans-serif"],
+        'wide': ['"Panchang"',"sans-serif"],
       }
     }
   },
