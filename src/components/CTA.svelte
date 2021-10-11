@@ -1,5 +1,5 @@
 <div class="flex flex-col items-center">
-  <div class="w-full py-20 flex flex-col justify-center h-screen max-h-[60rem] bg-base-200" id="contact">
+  <div class="w-full py-20 flex flex-col justify-center h-screen min-h-[30rem] max-h-[60rem] bg-base-200" id="contact">
     <div class="flex flex-col items-center mb-10 text-center">
       <h2 class="uppercase mb-6 leading-[0.7em] text-7xl md:text-[10vw] xl:text-[8rem] font-title font-black">
         <span class="text-transparent text-stroke">Start your project with</span>
