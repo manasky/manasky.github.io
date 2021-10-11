@@ -14,7 +14,7 @@
         <img class="w-6 h-6" width="24" height="24" src="/icons/gmail.svg" alt="email"/>
         Send us an Email
       </a>
-      <div class="divider sm:divider-vertical opacity-40">OR</div>
+      <div class="opacity-50 divider sm:divider-vertical">OR</div>
       <Calendly client:load>
         <button class="gap-3 btn xl:btn-lg btn-outline">
           <img width="24" height="24" class="w-6 h-6" src="/icons/zoom.svg" alt="zoom"/>

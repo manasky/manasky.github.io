@@ -21,7 +21,7 @@ module.exports = {
         "dark": {
           "primary": "#e95374",
           "primary-focus": "#d94f6d",
-          "primary-content": "#fff",
+          "primary-content": "#000",
           "secondary": "#f9cb33",
           "secondary-focus": "#f3c52e",
           "secondary-content": "#000",
