@@ -11,7 +11,7 @@
       <h3 class="text-3xl font-bold tracking-wider lg:text-4xl font-title">{@html title}</h3>
       {#each links as { title, link, icon }, i}
         <span class="tooltip" data-tip={title}>
-          <a href={link} rel="nofollow" class="btn btn-sm btn-ghost btn-circle">
+          <a href={link} rel="nofollow" aria-label={title} class="btn btn-sm btn-ghost btn-circle">
             {@html icon}
           </a>
         </span>
