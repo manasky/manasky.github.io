@@ -15,13 +15,13 @@ const {twitterUsername} = Astro.props;
 	{desc && <meta name="description" content={desc}>}
 
 	<!-- twitter -->
-	{title && <meta name="twitter:title" content={title} />}
-	{title && <meta name="twitter:image:alt" content={title} />}
-	{desc && <meta name="twitter:description" content={desc} />}
 	<meta name="twitter:card" content="summary_large_image" />
+	{title && <meta name="twitter:title" content={title} />}
+	{desc && <meta name="twitter:description" content={desc} />}
+	<meta name="twitter:image" content={Astro.site+'card.png'} />
+	{title && <meta name="twitter:image:alt" content={title} />}
 	{twitterUsername && <meta name="twitter:site" content={twitterUsername}/>}
 	{twitterUsername && <meta name="twitter:creator" content={twitterUsername}/>}
-	<meta name="twitter:image:src" content={Astro.site+'card.png'} />
 
 	<!-- og -->
 	{title && <meta property="og:title" content={title} />}
